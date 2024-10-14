@@ -24,6 +24,14 @@ def merge_pdfs(pdf1, pdf2, pages_pdf1, pages_pdf2):
 # Título do aplicativo
 st.title("Unificador de PDFs com seleção de páginas")
 
+
+with st.sidebar:
+    st.image("pdf.png")
+    st.text(" ")
+    st.text("Unifique seu pdf com este aplicativo web")
+
+
+
 # Upload dos dois arquivos PDF
 uploaded_file1 = st.file_uploader("Envie o primeiro PDF", type="pdf")
 uploaded_file2 = st.file_uploader("Envie o segundo PDF", type="pdf")
